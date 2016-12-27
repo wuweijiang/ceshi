@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d轮播</title>
+	<style>
+		.box{
+			width:800px;
+			height:400px;
+			perspective:3500px;
+			perspective-origin:bottom;
+			position: absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+</body>
+<script>
+	var box=document.querySelector(".box");
+	var heights=parseInt(getComputedStyle(box,null).height);
+	var widths=parseInt(getComputedStyle(box,null).width);
+	var num=6;
+	var arr=[];
+	for(var i=0;i<num;i++){
+		var scene=document.createElement("div");
+		scene.style.cssText="width:100%;height:"+(heights/num)+"px;position:absolute;top:"+(i*(heights/num))+"px;left:0;"
+		var div=document.createElement("div");
+
+		div.style.cssText="width:100%;height:100%;position:absolute;top:top:"+(i*(heights/num))+"px;left:0;transform-style:preserve-3d;transform-origin:center center -400px;transition:transform 3s ease "+(i*0.3)+"s;"
+
+		
+		for(var j=0;j<6;j++){
+		var boxs=document.createElement("div");
+		if(j==0){
+			boxs.style.cssText="width:100%;height:"+(heights/num)+"px;transform:rotateY(180deg);position:absolute;top:0;left:0;background:url(1.jpg) no-repeat 0 "+(-i*heights/num)+"px;"
+		}else if(j==1){
+			boxs.style.cssText="width:100%;height:"+(heights/num)+"px;position:absolute;top:0;left:0;transform:rotateY(90deg);transform-origin:left;background:url(2.jpg) no-repeat 0 "+(-i*heights/num)+"px;"
+		}else if(j==2){
+			boxs.style.cssText="width:100%;height:"+(heights/num)+"px;position:absolute;top:0;left:0;transform:rotateY(-90deg);transform-origin:right;background:url(3.jpg) no-repeat 0 "+(-i*heights/num)+"px;"
+		}else if(j==3){
+			boxs.style.cssText="width:100%;height:"+(heights/num)+"px;position:absolute;top:0;left:0;transform:translateZ("+-widths+"px);background:url(4.jpg) no-repeat 0 "+(-i*heights/num)+"px;"
+		}else if(j==4){
+			boxs.style.cssText="width:800px;height:800px;position:absolute;top:0px;left:0;transform:rotateX(-90deg);transform-origin:top;background:#ccc"
+		}else if(j==5){
+			boxs.style.cssText="width:800px;height:800px;position:absolute;top:"+-(widths-(heights/num))+"px;left:0;transform:rotateX(90deg);transform-origin:bottom;background:#ccc"
+		}
+		div.appendChild(boxs);
+
+		}
+		scene.appendChild(div);
+		arr.push(div);
+		box.appendChild(scene);
+		
+	}
+
+	var init=0;
+	function move(){
+		init+=90;
+			for(var i=0;i<arr.length;i++){
+				arr[i].style.transform="rotateY("+init+"deg)"
+			}	
+		}	
+			
+		
+	
+	var t=setInterval(move,5000)
+	
+	window.onfocus=function(){
+		t=setInterval(move,5000);
+		
+	}
+	window.onblur=function(){
+		clearInterval(t);
+	}
+	
+</script>
+</html>

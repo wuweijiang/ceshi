@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/run.css">
+    <script src="js/hitPix.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/run.js"></script>
+</head>
+<body>
+<audio src="audio/beijing.mp3" class="runa" loop></audio>
+<audio src="audio/diaoxue.wav" class="hita"></audio>
+<audio src="audio/zidan.wav" class="zidana"></audio>
+<audio src="audio/fali.wav" class="jumpa"></audio>
+<audio src="audio/jizhong.wav" class="hidea"></audio>
+<div class="start">
+    <div class="welcom text-center">Vector run!</div>
+    <br>
+        <!--<input type="text" style="width:50%" value="Perte" required>-->
+    <button class="btn btn-success btnst" type="button">S t a r t</button>
+</div>
+<div class="over text-center">
+    <div class="game">见鬼去吧!</div>
+    当前分数：<span class="scoreEle">0</span><br>
+    历史记录：
+    <ul>
+
+    </ul>
+    <button type="button" class="btn btn-success again">再来一次</button>
+    <button type="button" class="btn btn-success end">结束游戏</button>
+</div>
+<div class="zhezhao">
+
+    <span style="color:#fff;font-size:16px;font-weight:bold">生命值：</span><div class="life">
+        <div class="pres"></div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color:#fff;font-size:16px;font-weight:bold">成绩：</span>
+        <span class="jifen" style="display:block;position:relative;left:360px;top:-23px;width:100px;background:linear-gradient(yellow,#7FDA2E);border-radius:20px;box-shadow:0px 0px 8px rgba(255,255,255,0.5);padding-left:10px">0</span>
+</div>
+<!-- <img src="yun.png" alt=""> -->
+<canvas>
+
+</canvas>
+<img src="person/r1.png" alt="" class="run" hidden>
+<img src="person/r2.png" alt="" class="run" hidden>
+<img src="person/r3.png" alt="" class="run" hidden>
+<img src="person/r4.png" alt="" class="run" hidden>
+<img src="person/r5.png" alt="" class="run" hidden>
+<img src="person/r6.png" alt="" class="run" hidden>
+<img src="person/r7.png" alt="" class="run" hidden>
+<img src="person/r8.png" alt="" class="run" hidden>
+<!--障碍物-->
+<img src="hinder/q1.png" alt="" class="finder" hidden>
+<img src="hinder/q2.png" alt="" class="finder" hidden>
+<img src="hinder/q3.png" alt="" class="finder" hidden>
+<img src="hinder/q4.png" alt="" class="finder" hidden>
+<img src="hinder/q5.png" alt="" class="finder" hidden>
+<img src="hinder/q6.png" alt="" class="finder" hidden>
+<img src="hinder/q7.png" alt="" class="finder" hidden>
+<img src="hinder/q8.png" alt="" class="finder" hidden>
+
+
+
+<img src="img/zhi.png" alt="" class="zhi" hidden>
+<img src="person/jump.png" alt="" class="jump" hidden>
+</body>
+<script>
+    $(function(){
+        $(".end").click(
+            function(){
+            window.open("","_self").close();
+         
+        });
+    })
+</script>
+</html>

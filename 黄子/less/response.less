@@ -1,0 +1,142 @@
+@import "var.less";
+*{
+  box-sizing: border-box;
+}
+//最小屏
+.container{
+  &{
+    width: 750px;
+    margin:auto;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &>.row{
+    width:100%;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+    .clear;
+  }
+  &-fluid{
+    display: block;
+    width:100%;
+    margin:auto;
+  }
+  &-fluid>.row{
+    display: block;
+    width:100%;
+    .clear;
+  }
+}
+
+.container > .row:before,
+.container > .row:after ,
+.container-fluid > .row:before,
+.container-fluid > .row:after,
+.container:before,
+.container:after{
+  content: "";
+  display: block;
+}
+.container > .row:after,
+.container-fluid > .row:after,
+.container:after{
+  clear: both;
+}
+[class*='col-'] {
+  display: block;
+  float: left;
+}
+.loop();
+.col-s-hide {
+  display: none;
+}
+//中屏
+@media screen and (min-width: @num1){
+  .container{
+    width:750px ;
+    margin:auto;
+  }
+  .loop(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+
+}
+
+//大屏
+@media screen and (min-width: @num2){
+  .container{
+    width: 970px;
+    margin:auto;
+  }
+  .loop(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: @num3) {
+  .container {
+    width: 1170px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .container{
+    width:100%;
+    padding:0;
+  }
+}
+//栅格化的核心代码
+.loop(@type:s,@i:1) when (@i<=@cols){
+  .container-fluid>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@cols*100%;
+  }
+  .loop(@type,@i+1);
+}
+
+//清除浮动
+.clear(){
+  &:before,&:after{
+    content:"";
+    display: block;
+  }
+  &:after{
+    content:"";
+    clear:both;
+    line-height: 0;
+    height:0;
+    display: block;
+  }
+}
+
+//图片以及内容的一些响应
+[img-response] {
+  max-width: 100%;
+}
+[block-center] {
+  display: block;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+[text-center] {
+  text-align: center;
+}

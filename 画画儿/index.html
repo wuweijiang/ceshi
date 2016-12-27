@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/canvas.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/canvasdraw.js"></script>
+    <script src="js/canvas.js"></script>
+
+
+</head>
+<body onselectstart="return false">
+<ul class="menu" onselectstart="return false">
+    <li class="parent hasson"><div>文件</div>
+        <ul class="son file">
+            <li>
+        <input type="file" style="border:0px solid #ccc;background:none;color:rgba(0,0,0,0);font-size:16px;">  
+            </li>
+            <li>新建</li>
+            <li>返回</li>
+            <li>保存</li>
+        </ul>
+    </li>
+    
+    <li class="parent hasson"><div>工具</div>
+        <ul class="son">
+            <li data-role="line">-</li>
+            <li data-role="rect">□</li>
+            <li data-role="pen">✎</li>
+            <li data-role="circle">○</li>
+            <li data-role="star">☆</li>
+        </ul>
+    </li>
+
+    <li class="parent hasson"><div>填充类型</div>
+        <ul class="son">
+            <li data-rolo="stroke">边框</li>
+            <li data-rolo="fill">填充</li>
+        </ul>
+    </li>
+    <li class="parent hasson"><div>边框的颜色</div>
+        <ul class="son">
+            <input type="color">
+        </ul>
+    </li>
+    <li class="parent hasson"><div>填充的颜色</div>
+        <ul class="son">
+            <input type="color">
+        </ul>
+    </li>
+    <li class="parent hasson"><div>线宽度</div>
+        <ul class="son">
+            <li>粗</li>
+            <li>中</li>
+            <li>细</li>
+            <li><input type="text" style="width:90px"></li>
+        </ul>
+    </li>
+    <li class="parent">
+        <div>图片处理</div>
+        <ul class="son">
+            <li data-role="fx">反相</li>
+            <li data-role="msk">马赛克</li>
+            <li data-role="yt">原图</li>
+        </ul>
+        <img src="" alt="" hidden>
+    </li>
+    <li class="parent xpc">
+        <div>橡皮擦</div>
+        <ul class="son">
+            <li data-role="18">小</li>
+            <li data-role="36">中</li>
+            <li data-role="54">大</li>
+        </ul>
+    </li>
+    <li class="parent qchb">
+        <div class="qingchu">清除画板</div>
+        <!-- <ul class="son">
+            <li data-role="18">小</li>
+            <li data-role="36">中</li>
+            <li data-role="54">大</li>
+        </ul> -->
+    </li>
+    <li class="parent hasson"><div class="select">选择</div>
+        <!-- <ul class="son">
+            <li >选择</li>
+            <li>移动</li>
+        </ul> -->
+    </li>
+     
+    <li class="parent sq" >&#xe61b;</li>
+</ul>
+    <div class="container">
+        <div class="box">
+            <div class="xp"></div>
+            <div class="selectarea"></div>
+            <div class="copy"></div>
+            <canvas width="800px" height="600px">
+
+            </canvas>
+        </div>
+    </div>
+
+</body>
+</html>

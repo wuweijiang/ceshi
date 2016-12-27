@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.scene {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  perspective: 500px;
+}
+.scene .room {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transform-origin: center 500px 500px;
+}
+.scene .room .panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+}
+.scene .room .panel:nth-child(1) {
+  background: url("../image/thb.jpg");
+  background-size: contain;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  box-shadow: 0 0 100px #666 inset;
+}
+.scene .room .panel:nth-child(2) {
+  background: url("../image/bz.jpg");
+  background-size: 200px 200px;
+  box-shadow: 0 0 100px #ccc inset;
+  transform-origin: left;
+  transform: rotateY(-90deg);
+}
+.scene .room .panel:nth-child(3) {
+  background: url("../image/ch.jpg") no-repeat center;
+  background-size: 100% 100%;
+  box-shadow: 0 0 100px #666 inset;
+}
+.scene .room .panel:nth-child(4) {
+  background: url("../image/bz.jpg");
+  background-size: 300px 300px;
+  transform-origin: right;
+  transform: rotateY(90deg);
+  box-shadow: 0 0 100px #ccc inset;
+}
+.scene .room .panel:nth-child(5) {
+  background: url("../image/db.jpg");
+  background-size:200px 200px;
+  box-shadow: 0 0 100px #666 inset;
+  transform-origin: bottom;
+  transform: rotateX(-90deg) rotateY(180deg);
+}
+.scene .room .panel:nth-child(6) {
+  background: url("../image/1.jpg");
+  background-size: 100% 100%;
+}
+.left .iconfont {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 230px 60px;
+ /* background: #888;
+  box-shadow: 0 0 5px black;*/
+  color: coral;
+  font-size: 100px;
+  text-align: center;
+  transform: rotate3d(0, 1, 0, 180deg);
+  text-shadow: 0 0 5px;
+}
+.right .iconfont1 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  /*margin: 230px 100px;*/
+  /*background: #888;
+  box-shadow: 0 0 5px #ccc;*/
+  color: coral;
+  font-size: 100px;
+  text-align: center;
+  transform: rotate3d(0, 1, 0, 180deg);
+  text-shadow: 0 0 5px;
+}
+.jiaoxian{
+  width: 100%;
+  height:30px;
+  background: url(../image/db.jpg);
+  position:fixed;
+  bottom: 0;
+  left:0;
+  box-shadow: 0 -5px 10px rgba(82,82,82,0.7)
+}
+.men{
+  width: 250px;
+  height:500px;
+  position:fixed;
+  bottom:0;
+  right:100px;
+  background: red;
+  z-index: 10;
+}
+.dianshi{
+  width: 500px;
+  height:300px;
+  position:fixed;
+  right:30px;
+  top:100px;
+  background: red;
+  background: url(../image/dianshi.jpg) no-repeat;
+  background-size: cover;
+  box-shadow: -20px 20px 30px rgba(0,0,0,0.8);
+}
+video{
+  margin-left:4px;
+  margin-top: 2px;
+}
