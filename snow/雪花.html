@@ -31,7 +31,7 @@
 		}
 		
 		
-		div.style.cssText="width:40px;height:40px;position:absolute;left:"+(50+Math.random()*(cw-100))+"px;top:-70px;background:"+a[num]+";filter:blur(0.5px);border-radius:50%;transition:transform 4s ease-in "+(1+5*Math.random())+"s";
+		div.style.cssText="width:40px;height:40px;position:absolute;left:"+(50+Math.random()*(cw-100))+"px;top:-70px;background:"+a[num]+";filter:blur(0.5px);border-radius:50%;transition:transform 6s ease-in "+(1+5*Math.random())+"s";
 		document.body.appendChild(div);
 		arr.push(div);
 	
@@ -44,7 +44,7 @@
 				this.style.transform="translate(0,0)";
 				var that=this;
 				setTimeout(function(){
-					that.style.transition="transform 4s ease-in";
+					that.style.transition="transform 6s ease-in";
 					that.style.transform="translate(0,"+(ch-50)+"px)";
 				},0)
 			})
