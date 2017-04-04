@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*表明CSS文件的页面编码为UTF-8*/
+
+/*设置内外边距统一为0  消除各浏览器之间的差异*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {margin:0;padding:0;}
+
+/*字体：12px 1.5陪行高 无衬线字体（之后每个字体样式 防止浏览器的兼容性）*/
+body,button,input,select,textarea {font:12px tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif ;}
+
+/*保证h1-h6的字体大小和body字体一样大小*/
+h1,h2,h3,h4,h5,h6 { font-size:100%; }
+/*图片样式处理  display:block  清除图片底部空隙*/
+img { display: block; border:none; }
+/*列表样式全部清除*/
+ol,ul,li{list-style:none }
+
+/*a超链接 不显示下划线*/
+a{text-decoration:none;color: black;cursor: pointer}
+/*a超链接被激活时  不带下划线*/
+a:hover{text-decoration:none}
+
+/*em i文本标签 样式倾斜  设置正常（不倾斜）*/
+em,i {font-style:normal}
+/*文本标签字体*/
+code,pre,samp{font-family:courier new,courier,monospace}
+
+/*输入框 获得焦点边框不变化*/
+input:focus{outline: none;}
+/*legend {color:#000}*/
+/*button,input,select,textarea {font-size:eBusiness%}*/
+/*table {border-collapse:collapse;border-spacing:0}*/
+
+
+
+/******************* css common**********************/
+/*浮动设置*/
+.fl{ float: left;}
+.fr{ float: right;}
+
+/*设置元素的垂直对齐方式  text-top	把元素的顶端与父元素字体的顶端对齐  	默认。元素放置在父元素的基线上*/
+sup {vertical-align:text-top}
+sub {vertical-align:text-bottom}
+
+/*清楚浮动样式   after是伪类*/
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+/*IE6中的清除 与其他浏览器的兼容*/
+.clearfix { *zoom:1; }
+
+
+
+/*!*字体图标*!*/
+/*@font-face {*/
+    /*!*调用字体 名称*!*/
+    /*font-family: 'kx';*/
+    /*src:    url('../fonts/icomoon.eot?qiq197');*/
+    /*src:    url('../fonts/icomoon.eot?qiq197#iefix') format('embedded-opentype'),*/
+    /*url('../fonts/icomoon.ttf?qiq197') format('truetype'),*/
+    /*url('../fonts/icomoon.woff?qiq197') format('woff'),*/
+    /*url('../fonts/icomoon.svg?qiq197#icomoon') format('svg');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/

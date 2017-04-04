@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*640 1008*/
+
+.page1 h2{background: url("../image/images/zy.png") no-repeat;}
+.page1 span:nth-of-type(1){background: url("../image/images/zy_01.png") no-repeat; margin-left: 62%;}
+.page1 span:nth-of-type(2){background: url("../image/images/zy_02.png") no-repeat; margin-left: 56%;}
+.page1 span:nth-of-type(3){background: url("../image/images/zy_03.png") no-repeat; margin-left: 50%;}
+.page1 span:nth-of-type(4){background: url("../image/images/zy_04.png") no-repeat; margin-left: 44%;}
+.page1 span:nth-of-type(5){background: url("../image/images/zy_05.png") no-repeat; margin-left: 38%;}
+.page1 span:nth-of-type(6){background: url("../image/images/zy_06.png") no-repeat; margin-left: 32%;}
+
+.page1 h2{
+    width: 10.5%;
+    height:53.5%;
+    position: absolute;
+    -webkit-background-size:100% 100% !important;
+    background-size:100% 100% !important;
+    margin-left: 45.3%;
+    margin-top:19.2%;
+}
+.page1 span{
+    width: 5.9%;
+    height:19.7%;
+    position: absolute;
+    -webkit-background-size:100% 100% !important;
+    background-size:100% 100% !important;
+    margin-top:107.5%;
+}
+
+@media (max-width: 400px){
+    .page1 span{
+        margin-top:127.5%;
+    }
+}
+
+
+
+.page2 h2{background: url("../image/images/jia_01.png") no-repeat;}
+.page2 p{background: url("../image/images/jia_02.png") no-repeat;}
+.page2 span{background: url("../image/images/jia_03.png") no-repeat;}
+
+.page3 h2{background:   url("../image/images/ye_01.png") no-repeat;}
+.page3 p{background:    url("../image/images/ye_02.png") no-repeat;}
+.page3 span{background: url("../image/images/ye_03.png") no-repeat;}
+
+.page4 h2{background:   url("../image/images/yuan_01.png") no-repeat;}
+.page4 p{background:    url("../image/images/yuan_02.png") no-repeat;}
+.page4 span{background: url("../image/images/yuan_03.png") no-repeat;}
+
+.page5 h2{background:   url("../image/images/qing_01.png") no-repeat;}
+.page5 p{background:    url("../image/images/qing_02.png") no-repeat;}
+.page5 span{background: url("../image/images/qing_03.png") no-repeat;}
+
+.page6 h2{background:   url("../image/images/guo_01.png") no-repeat;}
+.page6 p{background:    url("../image/images/guo_02.png") no-repeat;}
+.page6 span{background: url("../image/images/guo_03.png") no-repeat;}
+
+
+.page7 h2{
+    background: url("../image/images/yj_04.png") no-repeat;
+    width: 62.5%;
+    height: 34%;
+    margin-left: 14.1%;
+    margin-top: 22%;
+}
+.page7 div{
+    position: absolute;
+    width: 0;
+    height:26%;
+    margin-left:42%;
+    margin-top: 62%;
+    border: 1px solid #000;
+}
+.page7 p{
+    background: url("../image/images/yj_01.png") no-repeat;
+    width: 6%;
+    height:26%;
+    margin-left:44%;
+    margin-top: 62%;
+}
+.page7 span{
+    background: url("../image/images/yj_03.png") no-repeat;
+    width: 32%;
+    height:24.5%;
+    margin-left:16.7%;
+    margin-top:112.5%;
+}
+.page7 strong{
+    background: url("../image/images/yj_02.png") no-repeat;
+    position: absolute;
+    -webkit-background-size:100% 100% !important;
+    background-size:100% 100% !important;
+    width: 32%;
+    height:24.5%;
+    margin-left:50%;
+    margin-top:111.2%;
+}
