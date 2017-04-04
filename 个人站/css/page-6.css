@@ -22,9 +22,14 @@
     /*display: none;*/
 }
 .item-6 .word {
+    padding:0 10px;
     font-size: 20px;
 }
-
+@media screen and (max-width: 768px){
+   .item-6 .word {
+    font-size: 18px;
+} 
+}
 
 
 

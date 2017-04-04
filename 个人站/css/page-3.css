@@ -82,11 +82,28 @@
     animation: bounceIn 2s linear forwards;
     -webkit-animation: bounceIn 2s linear forwards;
 }
+.row{
+    padding:0 50px;
+}
+.row div h2{
+     margin:20px;
+}
+@media screen and (max-width:768px){
+    .row{
+    padding:100px 20px;
 
+}
+.row div h2{
+     margin:0px;
+}
+.row div h4{
+     margin:20px 0px;
+}
+}
 .item-3 .skill-introduce {
     text-align: left;
     position: absolute;
-    top: 20%;
+    top: 9%;
     left: 5%;
     color: #000000;
 }

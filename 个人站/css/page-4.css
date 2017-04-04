@@ -66,9 +66,12 @@
         font-size: 15px;
         font-weight: 700;
     }
+    #item-4 h4{
+        font-size: 20px;
+    }
     #item-4 p {
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 500;
     }
     #item-4 .thumbnail p{
         font-size: 13px;

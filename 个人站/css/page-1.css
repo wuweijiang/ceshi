@@ -18,6 +18,12 @@
 .item-1 .motto {
     font-size: 25px;
 }
+@media screen and (max-width:768px){
+   .item-1 .motto {
+    font-size: 20px;
+    padding-top: 15px;
+} 
+}
 .item-1 .next-page {
     position: absolute;
     margin-left: -35px;

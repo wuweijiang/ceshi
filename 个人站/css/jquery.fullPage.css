@@ -70,15 +70,15 @@ html, body {
     margin-top: -38px;
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    /*left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #fff transparent transparent;*/
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    /*right: 15px;*/
+    /*border-width: 38.5px 0 38.5px 34px;*/
+    /*border-color: transparent transparent transparent #fff;*/
 }
 .fp-scrollable {
     overflow: scroll;
@@ -181,7 +181,7 @@ html, body {
     left: 20px;
 }
 .img{
-    text-align:center;height:160px;width:100%;margin-top:-60px;
+    text-align:center;height:160px;width:100%;margin-top:-60px;line-height:160px;
     -webkit-animation:move 2s ease;
 }
 .img img{
@@ -206,6 +206,25 @@ html, body {
         width:150px;
         height:150px;
     }
+}
+@media screen and (max-width:768px){
+    @-webkit-keyframes sql{
+    0%{
+        opacity:0;
+        width:0;
+        height:0;
+    }
+    50%{
+        opacity:0;
+        width:0px;
+        height:0px;
+    }
+    100%{
+        opacity:1;
+        width:100px;
+        height:100px;
+    }
+}
 }
 
 .row .col-xs-12 h2{

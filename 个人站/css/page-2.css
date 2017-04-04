@@ -3,6 +3,11 @@
 .item-2 .row{
     margin-top: 30px;
 }
+@media screen and (max-width: 768px){
+    .item-2 .row{
+    margin-top: -20px;
+}
+}
 .item-2 .container  {
     display: none;
 }
