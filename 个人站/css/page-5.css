@@ -30,6 +30,7 @@
 
 .portfolio-item {
     margin-bottom: 30px;
+
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
@@ -39,7 +40,7 @@
     transform: scale(1.2);
 }
 .portfolio-item .hover-bg {
-    height: 260px;
+    height: 250px;
     overflow: hidden;
     position: relative;
 }

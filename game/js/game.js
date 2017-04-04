@@ -4,7 +4,7 @@ function person(canvas,cobj,run,jump) {
     this.run=run;
     this.jump=jump;
     this.x=0;
-    this.y=400;
+    this.y=490;
     this.width=82;
     this.height=88;
     this.speedx=6;
@@ -35,7 +35,7 @@ function finder(canvas,cobj,finder) {
     this.cobj=cobj;
     this.finder=finder;
     this.x=this.canvas.width-20;
-    this.y=440;
+    this.y=520;
     this.width=80;
     this.height=80;
     this.state=0 ;
@@ -351,7 +351,7 @@ game.prototype= {
         document.querySelector(".zhezhao").onclick=function () {
             that.zidana.play();
             that.zidan.x=that.person.x+that.person.width/2;
-            that.zidan.y=that.person.y+that.person.height/6;
+            that.zidan.y=that.person.y+that.person.height/4;
             that.zidan.speedx=10;
             that.isfire=true;
         }

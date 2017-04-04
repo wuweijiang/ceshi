@@ -56,3 +56,25 @@ var project_info  = function () {
   }
 
 }
+
+function aav() {
+    var contentEle=document.getElementById("content");
+    var str="                  参与WEB项目的页面布局，进行前台页面技术研究开发，利用less写12栅格化响应式页面；"+
+            "负责利用JS实现Web中的交互效果；"+
+            "根据产品设计文档，解决浏览器兼容问题；"+
+            "基于HTML5、CSS3进行页面制作。"
+        
+    var i=0;
+    var flag=null;
+    function done(){
+        if(i<str.length){
+            contentEle.innerHTML=str.substring(0,i+1);
+            i=i+1;
+        }
+        else{
+            clearInterval(flag);
+        }
+    }
+    flag=setTimeout(function(){setInterval(done,50)},1000)
+}
+aav();
