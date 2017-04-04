@@ -89,10 +89,6 @@
      margin:20px;
 }
 @media screen and (max-width:768px){
-    .row{
-    padding:100px 20px;
-
-}
 .row div h2{
      margin:0px;
 }
