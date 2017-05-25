@@ -1,0 +1,17 @@
+{
+	"url" : "http://www.tuicool.com/ah/0/%%?lang=1#",
+	"type" : "text",
+	"from" : "1",
+	"to" : "2",
+	"charset" : "utf8",
+	"saveDir" : "d:/tuicool",
+	"selector" : [{
+			"$" : "$(\".list_article .aricle_item_info .title\").find(\"a\")",
+			"attr" : "href"
+		}, {
+			"$" : "$(\".article_body\")"
+		}
+	],
+	"isPagination" : 1,
+	"mode" : "web"
+}
